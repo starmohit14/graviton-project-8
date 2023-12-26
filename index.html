@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Roboto", sans-serif;
+            color: #000000;
+            background-color: #e7e3e3;
+        }
+        .navbar{
+            color: white;
+            display: flex;
+            background-color: black;
+            height: 50px;
+            position: sticky;
+            justify-content: flex-end;
+            padding: 8px;
+            word-spacing: 3rem;
+            
+        }
+        .navbar span{
+            margin-top: 12px;
+            margin-right: 900px;
+            font-size: 25px;
+        }
+        .navbar-text{
+            margin-top: 15px;
+            margin-right: 16px;
+        }
+        .section1{
+            background-image: url('http://127.0.0.1:5500/images/hero-bg.jpg');
+            height: 90vh;
+        }
+        .text{
+            margin-top: 230px;
+            margin-left: 170px;
+            color: white;
+            font-size: 30px;
+        }
+        .text button{
+            font-size: 15px;
+            background-color: black;
+            color: white;
+            margin: 30px;
+            width: 150px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .img{
+            margin-left: 800px;
+            margin-top: -350px;
+        }
+        .section2{
+            margin-top: 70px;
+        }
+        .section2 h2{
+            text-align: center;
+            font-size: 40px;
+        }
+        .sec2-box{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+        .section2 button{
+            margin-left: 690px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+            width: 150px;
+            border-radius: 10px;
+            margin-top: 70px;
+        }
+        .section3{
+            text-align: center;
+        }
+        .section3 h1{
+            margin-top: 100px;
+        }
+        .section3 p{
+            margin-left: 210px;
+            margin-right: 210px;
+        }
+        .section3 button{
+            margin-left: 30px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+            width: 150px;
+            border-radius: 10px;
+            margin-top: 70px;
+        }
+        .section4{
+            height: 47.5vh;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 80px;
+            background-image: linear-gradient(aqua,pink,red, black);
+            color: white;
+        }
+        .sec4-left{
+            flex-direction: column;
+        }
+        .sec4-text{
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+        .sec4-text p{
+            margin-right: 200px;
+        }
+        .sec4-icon{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            margin-left: 12px;
+        }
+        .sec4-img{
+            margin-right: 170px;
+            margin-top: -25px;
+        }
+        .section5{
+            margin-top: 70px;
+            text-align: center;
+        }
+        .section5 h1{
+            margin-top: 100px;
+        }
+        .section5 p{
+            margin-left: 210px;
+            margin-right: 210px;
+        }
+        .section5 button{
+            margin-left: 30px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+            width: 150px;
+            border-radius: 10px;
+            margin-top: 70px;
+        }
+        .section6{
+            text-align: center;
+            margin-top: 70px;
+        }
+        .section6 h1{
+            margin-top: 30px;
+        }
+        .sec6-box1{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 330px;
+            margin-right: 100px;
+            margin-top: 60px;
+        }
+        .sec6-box1-a{
+            border: 1ps solid white;
+            background-color: rgb(192, 185, 185);
+            border-radius: 5px;
+            height: 25vh;
+            width: 20vw;
+        }
+        .sec6-box1-a img{
+            margin-top: -15px;
+        }
+        .sec6-box1-b{
+            margin-right: 150px;
+            margin-left: 210px;
+            margin-top: 50px;
+        }
+        .sec6-box2{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 330px;
+            margin-right: 100px;
+            margin-top: 60px;
+        }
+        .sec6-box2-a{
+            border: 1ps solid white;
+            background-color: rgb(192, 185, 185);
+            border-radius: 5px;
+            height: 25vh;
+            width: 20vw;
+        }
+        .sec6-box2-a img{
+            margin-top: -15px;
+        }
+        .sec6-box2-b{
+            margin-right: 150px;
+            margin-left: 210px;
+            margin-top: 50px;
+        }
+        .section6 button{
+            margin-left: 30px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+            width: 180px;
+            border-radius: 10px;
+            margin-top: 80px;
+        }
+        .section7{
+            margin-top: 70px;
+            height: 50vh;
+            background-color: rgb(27, 25, 25);
+        }
+        .sec7-box{
+            display: flex;
+            justify-content: space-evenly;
+            /* margin-top: 70px; */
+            padding: 70px;
+            color: white;
+        }
+        .section7 button{
+            /* margin-left: 30px; */
+            background-color: greenyellow;
+            color: black;
+            font-size: 15px;
+            height: 40px;
+            width: 180px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .footer{
+            color: rgb(166, 159, 159);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <span>Cryptop</span>
+            <ul style="list-style-type:none;">
+                <li class="navbar-text">
+                    <a class="home">Home</a>
+                    <a class="about">About</a>
+                    <a class="how">How</a>
+                    <a class="wallet">Wallet</a>
+                    <a class="login">Login</a>
+                    <a class="signup">Sign-Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="" alt="">
+        <div class="text">
+            <h1>Digital Currency</h1> <br>
+            <h2>The Future of Trading.</h2>
+            <button>Get Started</button>
+        </div>
+        <div class="img">
+            <img src="http://127.0.0.1:5500/images/slider-img.png" alt="">
+        </div>
+    </div>
+
+    <div class="section2">
+        <h2>How It works ?</h2>
+        <div class="sec2-box">
+            <div class="sec2-box1">
+                <img src="https://images.unsplash.com/photo-1641437741740-900ee30d04e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="220px" alt="">
+            </div>
+            <div class="sec2-box2">
+                <img src="https://plus.unsplash.com/premium_photo-1681766677846-b2d4cf722c47?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="220px" width="330px" alt="">
+            </div>
+            <div class="sec2-box3">
+                <img src="https://images.unsplash.com/photo-1562167055-1afdc7ac7bca?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="220px" width="330px" alt="">
+            </div>
+            <div class="sec2-box4">
+                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="220px" alt="">
+            </div>
+        </div>
+        <button>Read More</button>
+    </div>
+
+    <div class="section3">
+        <h1>About Cryptop</h1>
+        <img src="http://127.0.0.1:5500/images/about-img.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+        <button>Read More</button>
+    </div>
+
+    <div class="section4">
+        <div class="sec4-left">
+            <div class="sec4-text">
+                <h1>Our Powerful app to connect it all</h1> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+            <div class="sec4-icon">
+                    <div class="download">Download Now</div>
+                    <div class="App-store">
+                        <img src="http://127.0.0.1:5500/images/app-store.png" alt="">
+                    </div>
+                    <div class="play-store">
+                        <img src="http://127.0.0.1:5500/images/app-store.png" alt="">
+                    </div>
+            </div>
+        </div>
+            <div class="sec4-img">
+                <img src="http://127.0.0.1:5500/images/slider-img.png" alt="">
+            </div>
+    </div>
+
+    <div class="section5">
+        <h1>Start Automatic Now</h1>
+        <img src="http://127.0.0.1:5500/images/auto-img.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+        <button>Register Now</button>
+    </div>
+
+    <div class="section6">
+        <h1>Testimonial</h1>
+        <div class="sec6-box1">
+            <div class="sec6-box1-a">
+                <img src="http://127.0.0.1:5500/images/client-1.jpg" alt="">
+                <h3>Readable</h3>
+                <h5>Content of a page</h5>
+            </div>
+            <div class="sec6-box1-b">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem 
+            </div>
+        </div>
+        <div class="sec6-box2">
+            <div class="sec6-box2-a">
+                <img src="http://127.0.0.1:5500/images/client-2.jpg" alt="">
+                <h3>Readable</h3>
+                <h5>Content of a page</h5>
+            </div>
+            <div class="sec6-box2-b">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem 
+            </div>
+        </div>
+        <button>Read More</button>
+    </div>
+
+    <div class="section7">
+        <div class="sec7-box">
+            <div class="sec7-box1">
+                <h1>Cryptop</h1> <br>
+                <h2>Contact Us</h2> <br>
+                <p>Page when looking at its layou</p> <br>
+                <p>+01 1234567890 </p> <br>
+                <p>demo@gmail.com</p>
+            </div>
+            <div class="sec7-box2">
+                <h1>Invest Money</h1><br>
+                <p>There are many variations of <br>
+                    passages of Lorem Ipsum available, <br>
+                    but the majority have suffered <br>
+                    alteration in some form, by injected <br>
+                    humour, </p>
+            </div>
+            <div class="sec7-box3">
+                <h1>Useful Links</h1><br>
+                <p>
+                    There are many<br>
+                    variations of<br>
+                    passages of<br>
+                    Lorem Ipsum<br>
+                    available, but the<br>
+                    majority have<br>
+                    suffered
+                </p>
+            </div>
+            <div class="sec7-box4">
+                <h1>Newsletter</h1><br>
+                <input type="text" placeholder="Enter your Email" style="height: 30px; background-color: black; color: rgb(202, 197, 197); font-size: 18px;"><br>
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+        <p class="footer">© 2019 All Rights Reserved By Free Html Templates</p>
+    </div>
+</body>
+</html>
